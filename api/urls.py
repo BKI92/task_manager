@@ -11,4 +11,3 @@ urlpatterns = [
     path('auth/', UserViewSet.as_view()),
 
 ]
-
