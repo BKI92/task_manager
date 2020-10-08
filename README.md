@@ -4,11 +4,11 @@
 С помощью сервиса можно создавать, изменять и просматривать задачи, а также удалять их.
 
 # Getting Started
-- запуск проекта выполняется командой <docker-compose up>
-следующий шаги
- - открываем терминал <docker exec -it CONTAINER_ID bash>
- - миграция <python manage.py migrate>
- - создание администратора <python manage.py createsuperuser>
+- запуск проекта выполняется командой docker-compose up
+    Далее необходимо выполнить следующий шаги:
+    - открываем терминал <docker exec -it CONTAINER_ID bash>
+    - миграция <python manage.py migrate>
+    - создание администратора <python manage.py createsuperuser>
  
 # Usage
 - Регистрация: api/v1/auth/
