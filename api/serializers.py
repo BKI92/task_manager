@@ -1,15 +1,17 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
 from .models import Task
+
 User = get_user_model()
 
 
 class TaskSerializer(serializers.ModelSerializer):
-    # author = serializers.ReadOnlyField(source='author.username')
-    finished = serializers.DateField(format="%d-%m-%Y ", input_formats=['%d-%m-%Y',])
+    author = serializers.ReadOnlyField(source='author.username')
+    created = serializers.ReadOnlyField()
 
     class Meta:
-        fields = ('id', 'title', 'description', 'created', 'status', 'finished')
+        fields = ('id', 'author', 'title', 'description', 'created', 'status',
+                  'finished')
         model = Task
 
 
@@ -25,4 +27,3 @@ class UsersSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError(
                 f"User with this username already exist.")
         return data
-
