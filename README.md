@@ -1,18 +1,17 @@
-API task_manager
+#API task_manager
 Сервис планирования задач.
 Для использования сервиса необходимо пройти регистрацию и аутентификацию.
 С помощью сервиса можно создавать и изменять и просматривать 
 запланированные задачи, а также удалять их.
 
-Getting Started
+#Getting Started
 - запуск проекта выполняется командой <docker-compose up>
-# следующий шаги
+следующий шаги
  - открываем терминал <docker exec -it CONTAINER_ID bash>
  - миграция <python manage.py migrate>
  - создание администратора <python manage.py createsuperuser>
  
-Usage
-
+#Usage
 - Регистрация: api/v1/auth/
 Необходимо передать уникальный логин и пароль
 
@@ -33,18 +32,18 @@ Usage
 Просмотр истории изменения задач пользователями доступен в админке Django
 
 
-Built With
+#Built With
 DRF - Django Rest Framework
 PostgreSQL v12.4
 
-Versioning
+#Versioning
 На данный момент версия api v1. Чтобы узнать доступные версии смотрите теги в этом репозитории.
 
-Authors
+#Authors
 Balashov Konstantin
 
-License
+#License
 Этот проект использует лицензию MIT License - для подробностей смотрите  the LICENSE.md 
 
-Acknowledgments
+#Acknowledgments
 Спасибо, всем кто воспользовался данным сервисом, буду рад обратной связи.
