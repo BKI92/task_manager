@@ -30,8 +30,9 @@
 
 
 # Built With
-DRF - Django Rest Framework
-PostgreSQL v12.4
+- Django 3
+- DRF - Django Rest Framework
+- PostgreSQL v12.4
 
 # Versioning
 На данный момент версия api v1. Чтобы узнать доступные версии смотрите теги в этом репозитории.
